@@ -35,10 +35,10 @@ def map_result(result):
 
 # Initial Model
 # Classifier
-gradient_boosting_classifier_model, classifier_scaler, classifier_pca, classifier_cols = call_classifier_model(MODEL='DecisionTreeClassifier')
+gradient_boosting_classifier_model, classifier_scaler, classifier_pca, classifier_cols = call_classifier_model(MODEL='GradientBoostingClassifier')
 
 # Regressor
-xgb_regressor_model, regressor_scaler, regressor_pca, regressor_cols = call_regressor_model(MODEL='DecisionTreeRegressor')
+xgb_regressor_model, regressor_scaler, regressor_pca, regressor_cols = call_regressor_model(MODEL='XGBRegressor')
 
 # Tạo giao diện Streamlit
 st.title("Football Match Outcome Predictor ⚽⚽⚽")
